@@ -10,7 +10,7 @@ app.use('/html', express.static(path.join(__dirname, 'html')));
 app.use('/js', express.static(path.join(__dirname, 'js')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'html', 'main.html'));
+    res.sendFile(path.join(__dirname, 'public', 'html', 'index.html'));
 });
 
 app.listen(port, () => {
